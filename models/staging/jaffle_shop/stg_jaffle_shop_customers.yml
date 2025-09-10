@@ -6,7 +6,13 @@ models:
   - name: customer_id
     description: A unique identifier for each customer, derived from the 'id' field
       in the source data.
+    data_tests:
+          - unique
+          - not_null
   - name: first_name
     description: The first name of the customer.
   - name: last_name
     description: The last name of the customer.
+  # - name: null_test
+  #   data_tests:
+  #     - not_null
